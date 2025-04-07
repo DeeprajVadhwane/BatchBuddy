@@ -30,7 +30,7 @@ for i in range(num_topics):
 # Check if topics are missing, and ask for default usage
 if num_topics == 0 or len(custom_topics) == 0:
     st.sidebar.warning("⚠️ No custom topics provided.")
-    use_default = st.sidebar.checkbox("Use default weekly topics?", value=True)
+    use_default = st.sidebar.checkbox("✅ Use default weekly topics?", value=True)
     if use_default:
         custom_topics = default_topics.copy()
 
